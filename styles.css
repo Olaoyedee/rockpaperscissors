@@ -162,6 +162,7 @@ main{
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    z-index: 999;
 }
 .game-rules-modal{
     margin-top: 10%;
