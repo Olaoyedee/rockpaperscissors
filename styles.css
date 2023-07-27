@@ -1,0 +1,339 @@
+/* -------------------BASE----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    /* display: grid;
+    place-items: center; */
+}
+.rock-paper-scissors{
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 30vh;
+    width: 100%;
+    margin: auto;
+  
+    
+}
+.logo_scoreboard_container{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    border: 2px solid  hsl(217, 16%, 45%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+.logo img{
+    margin-left: 0.75rem;
+}
+
+.scorecard{
+    margin-right: 0.75rem;
+    height: 80%;
+    width: 15%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    
+    
+}
+.scorecard p{
+  color: hsl(229, 64%, 46%);
+}
+.scorecard h1{
+  font-size: 5rem;
+   
+}
+main{
+    height: 60vh;
+    width: 100%;
+    
+}
+.game-center{
+    height: 100%;
+    width: 100%;
+}
+.game-container{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    /* display: none; */
+   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: block;
+}
+.triangle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -50;
+}
+.triangle img{
+
+}
+.first-two-circles, .lastcircle{
+    display: flex;
+    width: 100%;
+    height: 45%;
+    
+    justify-content: space-around;
+  
+}
+.paper-circle, .scissors-circle{
+  
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+}
+.paper-circle{
+    background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    border-bottom: outset 10px hsl(230, 89%, 65%);
+    z-index: 2;
+    
+}
+.scissors-circle{
+    background-image: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    border-bottom: outset 10px hsl(40, 84%, 53%);
+    z-index: 2;
+}
+.rock-circle{
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient(hsl(349, 71%, 52%) , hsl(349, 70%, 56%));
+    border-bottom: outset 10px hsl(349, 70%, 56%);
+    z-index: 2;
+}
+.userinnerCircle{
+    height: 80%;
+    width: 80%;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border-top:outset 5px wheat;;
+    
+
+}
+.innerCircle{
+    height: 80%;
+    width: 80%;
+    border: 1px solid white;
+    border-top: outset 5px wheat;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+
+}
+.modal{
+    height: 70vh;
+    scale: 0;
+    width: 45%;
+    position: absolute;
+    top: -18%;
+    left: 28%;
+    /* display: none; */
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.game-rules-modal{
+    margin-top: 10%;
+}
+
+.rules-close{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer{
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+}
+.rules{
+    height: 70%;
+    width: 10%;
+    border: 1px solid white;
+    color: white;
+    display: grid;
+    place-items: center;
+    float: right;
+}
+
+
+.step-two{
+    height: 100%;
+    width: 100%;
+    /* margin: auto; */
+   display: none;
+}
+.inherit-step-2{
+    display: flex;
+    justify-content: space-around;
+}
+.usergame-info{
+    display: flex;
+    justify-content: space-around;
+}
+.biggest-circle{
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.big-circle{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.small-circle{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.inner{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+}
+.com-biggest-circle{
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.com-big-circle{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.com-small-circle{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+}
+.com-inner, .userinnerCircle{
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid red; */
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+}
+.cominnerCircle{
+    height: 80%;
+    width: 80%;
+    background-color: hsl(237, 49%, 15%);
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;
+    border-top: outset 5px wheat;
+
+}
+/* This class is used in JS */
+.circle-bg{
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.gamedecider{
+    width: 15%;
+    height: 20vh;
+   
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.gamedecider>h1{
+    height: 10vh;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continue{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
